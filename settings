@@ -1,0 +1,22 @@
+{
+  "window.commandCenter": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.tree.indent": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "explorer.excludeGitIgnore": true,
+  "cursor.composer.renderPillsInsteadOfBlocks": true,
+  "cursor.composer.collapsePaneInputBoxPills": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "git.autofetch": true
+}
