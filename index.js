@@ -16,7 +16,7 @@ async function fetchAndStorePrices() {
     const response = await fetch('https://fapi.binance.com/fapi/v1/premiumIndex');
     const data = await response.json();
 
-    const time = new Date();
+     const time = new Date();
 
     for (const token of data) {
       const { symbol, markPrice } = token;
