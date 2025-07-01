@@ -2,7 +2,7 @@ const { Sender } = require('@questdb/nodejs-client');
 
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-const sender = Sender.fromConfig('http::addr=localhost:9000');
+const sender = Sender.fromConfig('http::addr=questdb:9000');
 
 async function fetchAndStorePrices() {
   
