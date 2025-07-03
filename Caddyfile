@@ -1,0 +1,3 @@
+cryptoprices.store {
+  reverse_proxy grafana:3000
+}

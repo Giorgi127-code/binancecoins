@@ -18,18 +18,12 @@ async function fetchAndStorePrices() {
       if (!markPrice) continue;
       if (!symbol.endsWith("USDT"))continue;
 
-
-
       const price = parseFloat(markPrice);
 
-
-           await sender.table('binance_prices')
+      await sender.table('binance_prices')
         .symbol("symbol",symbol.substring(-4, (symbol.length - 4)))
         .floatColumn("price",price)
         .at(time, "ms");
-
-       
-      
     }
     await sender.flush();
   } catch (error) {
